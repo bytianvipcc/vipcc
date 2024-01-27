@@ -1,0 +1,103 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.wang/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "http://jlar.cn/",
+            "path": "index.html",
+            "saved": true,
+            "size": 20079,
+            "children": [
+                {
+                    "url": "https://share-cdn.yuniapp.cn/share/405a9eb28b5a7fda90a8d444fdb14470/f51be29dc15770ac94bfb22ddda27706/preview",
+                    "path": "img/preview.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://sh520i.gitee.io/js.cn/djtx.js",
+                    "saved": false
+                },
+                {
+                    "url": "http://sh520i.gitee.io/yy.cn/jquery-1.11.0.min.js",
+                    "saved": false
+                },
+                {
+                    "url": "http://sh520i.gitee.io/yy.cn/sweetalert.min.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://nim-nosdn.netease.im/MTExNTUxNzE=/bmltYV8zMzY4NzE2MzU4NV8xNjUxMDg0MzU5MjcyX2IzNjk1ZjI3LWY4NDEtNGM2ZS05NGNhLTA3MGJhMTZmZjQwNA==?createTime=1651084359957",
+                    "path": "img/bmltYV8zMzY4NzE2MzU4NV8xNjUxMDg0MzU5MjcyX2IzNjk1ZjI3LWY4NDEtNGM2ZS05NGNhLTA3MGJhMTZmZjQwNA==.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "http://sh520i.gitee.io/yy.cn/%E9%97%AE%E6%98%9F%E6%B5%B7.mp3",
+                    "saved": false
+                }
+            ]
+        }
+    ],
+    "alias": "jlar-cn-d1vyvpe",
+    "info": {
+        "remark": [],
+        "title": "和平商城导航",
+        "domain": "jlar.cn",
+        "origin": "http://jlar.cn",
+        "ip": "45.158.21.183",
+        "main": "index.html",
+        "url": "http://jlar.cn/",
+        "totalSize": "20.1 kB",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "http://jlar.cn/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.wang/"
+            }
+        },
+        "response": {
+            "responseUrl": "http://jlar.cn/",
+            "redirects": [],
+            "statusCode": 200,
+            "headers": {
+                "server": "nginx",
+                "date": "Sun, 29 May 2022 11:42:25 GMT",
+                "content-type": "text/html",
+                "content-length": "20950",
+                "last-modified": "Wed, 27 Apr 2022 23:43:48 GMT",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "etag": "\"6269d534-51d6\"",
+                "accept-ranges": "bytes"
+            }
+        },
+        "time": {
+            "start": "2022-05-29T11:42:25.312Z",
+            "end": "2022-05-29T11:42:28.746Z"
+        }
+    },
+    "options": {
+        "url": "http://jlar.cn/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "formatter": [
+            "html",
+            "css",
+            "js"
+        ],
+        "filenameGenerator": "byType"
+    }
+}

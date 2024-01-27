@@ -1,0 +1,44 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<script src="
+https://cdn.staticfile.org/layer/3.5.1/layer.js" charset="utf-8"></script><link rel="stylesheet" href="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js" id="layuicss-layer">
+<script>
+var tj = `【推荐新闻（仅供参考）】
+绝第推荐：BRO / RAP丶RST丶XF丶WE丶巅峰丶蔡徐坤
+绝第单板推荐：CE丶MY丶WE
+永劫推荐：AH丶花花
+川越推荐：橙子 / NEW丶水精灵丶麦香丶乌龟
+川越变态推荐：煊赫门丶草莓熊丶凡士林
+川越挑战推荐：国宝丶咖啡
+连萌推荐：NRK丶PV丶TY丶PW丶无心超内丶Basics / Po(防封)丶爆爆(防封)
+云鼎推荐：鸡你太美丶棋魂内部版
+何平模拟器推荐：三体
+CSGO推荐：RA丶VV丶Pjoin丶CK丶GE
+豆奶粉推荐：黄瓜丶雪见丶二嫂丶长瓜丶柠檬丶牛子
+APEX推荐：KK
+原神推荐：HH
+
+更新时间：2023-05-15 22:42:05`</script>
+<script>
+tj=tj.replace(/[\n\r]/g,'<br />');
+function alert_qun(){
+	layer.open({
+  type: 1
+  ,title: false //不显示标题栏
+  ,closeBtn: false
+  ,area: ['600px', 'auto']
+  ,shade: 0.8
+  ,id: 'LAY_layuipro' //设定一个id，防止重复弹出
+  ,resize: false
+  ,btn: ['我知道了']
+  ,btnAlign: 'c'
+  ,moveType: 1 //拖拽模式，0或者1
+  ,content: '<div style="padding: 30px;padding-bottom:5px;padding-top:20px; line-height: 30px; background-color: #393D49; color: #fff; font-weight: 350; font-size: 16px;">'+tj+'</div>'
+});
+}
+$(document).ready(function(){
+    alert_qun();
+    $(".layui-layer-btn0").click(function(){
+        window.opener=null;window.open('','_self');window.close();
+    });
+});
+</script>

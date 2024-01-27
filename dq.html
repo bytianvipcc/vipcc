@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		
+		<title>代抢</title>
+		<script src="dq.js"></script>
+	</head>
+	<body style=" background:#1467b7;width: 100%;">
+		<p><input type="radio" name="app" value="27" title="小白泽">小白泽</p>
+		<p><input type="radio" name="app" value="28" title="快乐星球">快乐星球</p>
+		<p>请输入速度单位（1000=1秒一次）太快容易频繁</p>
+		<p><input class="srk2" type="text" name="sudu" value="900" placeholder="请输入速度单位（1000=1秒一次）"></p>
+		<p id="sss">未开始</p>
+		<div class="tityzm" style="width:100%">
+			<input class="srk2" type="text" name="yzm" placeholder="请输入小白泽兑换码" required="" oninvalid="setCustomValidity(&#39;请输入短信验证码&#39;);" oninput="setCustomValidity(&#39;&#39;);" autocomplete="off">
+			<input type="button" id="btn" value="获取链接" onclick="settime(this)"> 
+		</div>
+		<p>成功：</p>
+		<textarea name="res"></textarea>
+		<p>错误日志：</p>
+		<textarea name="reser"></textarea>
+	
+
+<script charset="UTF-8" id="LA_COLLECT" src="js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JlC6ltPrZRSrjVEU",ck: "JlC6ltPrZRSrjVEU"})</script>
+<script type="text/javascript">
+$(function(){
+	$(".dzncon li").first().show();
+	$(".dzniu li").eq(0).addClass("on")
+	$(".dzniu li").click(function(){
+		$(this).addClass("on").siblings().removeClass("on")
+		var shu=$(this).index();		
+		$(".dzncon li").eq(shu).fadeIn().siblings().fadeOut();		
+	})
+	
+})
+</script>
+
+
+<!-- 验证码倒计时 -->
+<script type="text/javascript">
+	window.onload=function(){
+        document.onkeydown=function(){
+            var e=window.event||arguments[0];
+            if(e.keyCode==123){
+                return false;
+            }else if(e.keyCode==83){
+                return false;
+            }else if((e.ctrlKey)&&(e.shiftKey)&&(e.keyCode==73)){
+                return false;
+            }
+        };
+        document.oncontextmenu=function(){
+            return false;
+        }
+    }
+   
+    var countdown=60; 
+    var is = false;
+    $("#sss").html("未开始");
+    function settime(obj) { 
+        var sudu=$("[name=sudu]").val(); 
+        if(is){
+            return;
+        }else{
+            $("#sss").html("疯狂抢链接中:"+Math.ceil(Math.random()*100));
+            var code = $("[name=yzm]").val();
+            var app = $("[name=app]:checked").val();
+            // var ms = $("[name=ms]:checked").val();
+            // if(ms==1){
+            // }else{
+            // }
+            var url = "https://qxapi.6gou6.com/ios/tfapi?rc="+code+"&ai="+app;
+            
+            $.get(url,{},function(res){
+                if(res.code==0){
+                    var sound = $('<embed autoplay="true" height="0" width="0" />');
+                    sound.attr('src', 'chengg.mp3');
+                    $('body').append(sound);
+                    
+                    
+                    console.log(res);
+                    alert(res.data.uri);
+                    $("[name=res]").text(res.data.uri);
+                    const target = document.getElementById("res") // 创建input节点
+                    // target.value = key // 给input的value赋值（要复制的文字）
+                    // document.body.appendChild(target) // 向页面插入input节点
+                    target.select() // 选中input
+                    $("#sss").html("已抢到");
+                    try {
+                        document.execCommand('Copy') // 执行浏览器复制命令
+                        $("#sss").html("已抢到-复制成功");
+                        console.log('复制成功')
+                    } catch {
+                        console.log('复制失败')
+                    }
+                    
+                    $("[name=reser]").text("已抢到|"+Math.ceil(Math.random()*100));
+                    is = true;
+                    return;
+                }else{
+                    console.log(res);
+                    $("[name=reser]").text(res.msg+"|"+Math.ceil(Math.random()*100));
+                    is = false;
+                    return false;
+                    // alert(res.msg);
+                }
+            },'json');
+            setTimeout(function() { 
+                settime(obj) }
+                ,sudu) 
+        }
+        
+    }
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

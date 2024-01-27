@@ -1,0 +1,42 @@
+使用教程：
+
+1.上传插件网站根目录
+
+2.打开khyy文件夹
+
+修改index.php文件中的链接（url前面的0是跳转时间，可自行设置）
+echo '<html>
+<head>
+    <meta http-equiv="refresh" content="0;url=你的网站链接">
+</head>
+</html>';
+
+注：若只做短链不用跳转，则只需在对应文件夹下index.php文件中
+在require_once('../WxqqJump/WxqqJump.php');前面加上【//】即可
+例子：
+//require_once('../WxqqJump/WxqqJump.php');
+
+添加其他链接方法
+
+在网站根目录创建对应文件夹
+复制khyy文件夹下index.php文件，
+修改index.php内链接
+访问：域名+/文件夹名称即可
+
+
+用途：
+1.防红
+2.短链
+3.使用备案域名，可用作微信小程序内跳转未备案域名
+-------------------------------------
+
+
+
+
+
+如需用作网站防红
+则在网站运行目录（一般为根目录或public目录）下index.php文件
+第一行 <?php 下新增一行：
+require_once('WxqqJump/WxqqJump.php');
+
+当不再使用或者需要临时关闭跳转时，只需//注销该行代码即可。

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://new.wxredcover.cn/api/ylgy/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>羊羊刷次数</title>
+    <link rel="apple-touch-icon" href="https://new.wxredcover.cn/api/ylgy/favicon.ico">
+	<link rel="icon" href="https://new.wxredcover.cn/api/ylgy/favicon.ico">
+    <link href="./羊羊刷次数_files/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="./羊羊刷次数_files/3.0.css" type="text/css" rel="stylesheet">
+    <script src="./羊羊刷次数_files/jquery.min.js"></script>
+    <script src="./羊羊刷次数_files/layer.min.js" type="application/javascript"></script><link rel="stylesheet" href="./羊羊刷次数_files/layer.css" id="layuicss-layer" lay-status="creating">
+  </head>
+  <body>
+    <div class="container">
+      <div class="box col-12">
+        <div class="text-center alert alert-success mb-3" role="alert" id="content">
+使用教程<br>
+打开羊了个羊,点击我的名片查看ID<br>
+再输入你的ID,点击获取,开始<br>
+车速一次100！记住不要刷太多，会被清0<br>
+<font color="red">如需停止请直接关闭网页</font><br>
+<font color="red">防止迷路，记得关注<a href="https://work.weixin.qq.com/kfid/kfcd786a1cd624ec11f">Yitian</a></font><br>
+<!--<a href="WeChat_20220919035549.mp4"><font color="blue">👉点击查看视频教程👈</font></a>-->
+        </div>
+		<div class="form-inline uid mb-3 clearfix">
+			<div class="form-floating col-6">
+			  <input class="form-control" id="uid" placeholder="输入UID">
+			  <label for="token">请输入UID，获取token</label>
+			</div>
+			<!--<button class="btn btn-secondary col-3">获取</button>-->
+			<button class="btn btn-secondary col-4" id="get_token">获取</button>
+			<!--<button class="btn btn-success col-3 btn3" id="get_token">获取 token</button>-->
+		</div>
+        <div class="form-floating mb-3">
+          <input class="form-control" id="token" placeholder="请输入你的 token">
+          <label for="token">token</label>
+        </div>
+        <div class="form-floating mb-5" style="display:none">
+          <input class="form-control" id="frequency" placeholder="请输入你的通关次数" oninput="value=value.replace(/[^\d]/g,&#39;&#39;)" value="6666" maxlength="4">
+          <label for="frequency">请输入你的通关次数（限制9999次）</label>
+        </div>
+		<div class="form-inline mb-3 text-center">
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="get_type" value="1" checked="">
+			  <label class="form-check-label" for="inlineRadio1">刷羊群次数</label>
+			</div>
+			<div class="form-check form-check-inline">
+			  <input class="form-check-input" type="radio" name="get_type" value="2">
+			  <label class="form-check-label" for="inlineRadio2">刷话题次数</label>
+			</div>
+		</div>
+        <button class="btn btn-success col-12 mb-4" id="get_code">开始</button>
+        <div class="mb-3">
+          <div class="text-center" id="jiaocheng">
+           
+            <div class=" mb-1 btn3">
+              <a href="http://dh.bytian.vip/yyyyyy.html" target="_blank" class="nav-link">羊了个羊</a>
+                           <a href="https://jq.qq.com/?_wv=1027&k=wndU0Sza" target="_blank" class="nav-link">加羊群</a>
+                                                      <a href="https://work.weixin.qq.com/kfid/kfcd786a1cd624ec11f" target="_blank" class="nav-link">在线求助</a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./羊羊刷次数_files/4.0.js"></script><script src="./羊羊刷次数_files/ylgyse.js"></script><div class="layui-layer-shade" id="layui-layer-shade1" times="1" style="z-index: 19891014; background-color: rgb(0, 0, 0); opacity: 0.3;"></div><div class="layui-layer layui-layer-dialog layer-anim layer-anim-00" id="layui-layer1" type="dialog" times="1" showtime="0" contype="string" style="z-index: 19891015; position: fixed; top: 358.5px; left: 840.5px; visibility: hidden;"><div class="layui-layer-title" style="cursor: move;">信息</div><div id="" class="layui-layer-content">欢迎访问羊羊通关神器<br>更多福利请点击下方加入福利群</div><span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"></a></span><div class="layui-layer-btn layui-layer-btn-"><a class="layui-layer-btn0">加入福利群</a><a class="layui-layer-btn1">好的</a></div><span class="layui-layer-resize"></span></div><div class="layui-layer-move" id="layui-layer-move"></div>
+    <script>
+
+ function click(e) {
+ if (document.all) {
+ if (event.button == 2 || event.button == 3) {
+ alert("欢迎光临寒舍，有什么需要帮忙的话，请与yitian联系！");
+          oncontextmenu = 'return false';
+        }
+      }
+ if (document.layers) {
+ if (e.which == 3) {    
+          oncontextmenu = 'return false';
+        }
+      }
+    }
+ if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+    }
+    document.onmousedown = click;
+    document.oncontextmenu = new Function("return false;")
+
+    document.onkeydown = document.onkeyup = document.onkeypress = function () {
+ if (window.event.keyCode == 123) {
+        window.event.returnValue = false;
+ return (false);
+      }
+    }
+      </script>
+  
+</body></html>

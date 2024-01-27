@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>羊了个羊</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.12.0/js/md5.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+      <script src="http://yyy.howtu.top/assets/js/layer/layer.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js" integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="yyyyy/oneui.css">
+        <img style="background: linear-gradient(to bottom,#104E8B,#9FB6CD);" class="full-bg full-bg-bottom" ondragstart="return false;" oncontextmenu="return false;">
+        <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JodZuNHjtQvsN7Gd",ck: "JodZuNHjtQvsN7Gd"})</script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;">
+    <div class="panel panel-primary">
+        <div class="panel-heading" style="text-align: center;"><h3 class="panel-title">
+            羊了个羊</h3>
+        </div>
+        <div class="panel-body" style="text-align: center;">
+				
+            <div class="list-group">
+
+            <div class="list-group-item">
+                                    <div class="form-group">
+                <div class="input-group"><div class="input-group-addon">Token</div>
+                <input type="text" id="uin" value=""  class="form-control" />
+                </div></div>
+                <div class="form-group">
+                <div class="input-group"><div class="input-group-addon">通关次数</div>
+                <input id="num" value="1" oninput="value=value.replace(/[^\d]/g,'');if(value>1000)value=1000"  class="form-control" />
+               
+                </div></div>
+                 <div class="form-group">
+                    <div class="input-group"><div class="input-group-addon">通关时间(秒)</div>
+                <input id=tgtime value="888" oninput="value=value.replace(/[^\d]/g,'');if(value>3000)value=3000"  class="form-control" />
+               
+                </div></div>
+                
+               </div>
+    <label class="mdui-radio">
+    <input type="radio" name="zan" value ="1" checked />
+    <i class="mdui-radio-icon"></i>
+<a style='color:#ff88c2'>羊圈</a>
+  </label>
+       <label class="mdui-radio">
+    <input type="radio" name="zan" value ="2"/>
+    <i class="mdui-radio-icon"></i>
+<a style='color:#ff88c2'>话题</a>
+  </label>
+  <hr>
+<a href="http://dh.bytian.vip/yyyy.html" target="_blank" class="mdui-btn mdui-btn-block mdui-color-blue-100 mdui-ripple mdui-btn-raised">新版本无需抓包 输入uid即可 点击进入</a> 
+  <hr>
+                <button type="button" id="submit" class="mdui-btn mdui-btn-block mdui-color-blue-100 mdui-ripple mdui-btn-raised">立即通关</button>
+              
+                </div>
+                <div id="load" class="alert alert-info" style="display:none;"></div>
+            </div>
+                        <div class="mdui-table-fluid" id="liebiao" >
+<textarea id="log" class="form-control" rows="10" readonly></textarea>
+    </div>
+     <hr>
+          	<a href="az.mp4" target="_blank" class="btn btn-primary btn-sm btn1 mb-1">安卓教程</a> <a href="https://byitian.lanzouw.com/ivOQQ0bur1id" target="_blank" class="btn btn-primary btn-sm btn1 mb-1">安卓下载</a>
+
+          <a href="ios.mp4" target="_blank" class="btn btn-primary btn-sm btn1 mb-1">苹果教程</a> <a href="https://apps.apple.com/cn/app/stream/id1312141691" target="_blank" class="btn btn-primary btn-sm btn1 mb-1">苹果下载</a> 
+          <a href="img/uid.jpg" target="_blank" class="btn btn-primary btn-sm btn1 mb-1">UID在哪</a>
+          <hr>
+    <h2>抓包教程</h2>
+                <div class="block-options pull-right">
+           <font color="#FF0000"> <a  data-toggle="modal" data-target="#hqid"class="btn btn-effect-ripple btn-default toggle-bordered enable-tooltip">友情赞助</a></font>
+            </div>
+								1: 删除小程序<br>
+								2: 打开抓包<br>
+								3: 进入小程序 等待初始化完毕<br>
+								4: 停止抓包<br>
+								5: 找包rank_stage_info, 请求头中有个t, 代表token<br>
+							<a href="https://jq.qq.com/?_wv=1027&k=wndU0Sza" target="_blank" style="color:red">加群看详细教程(有不限制次数PC软件)</a>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <div class="modal fade" id="hqid">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">友情赞助</h4>
+                </div>
+                <div class="panel-body">
+           <img src="yyyyy/zz.png"  style="width:100%;height:100%"/>
+            </div>
+         
+                <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button> </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    </body>
+<div style="display:none;"><script type="text/javascript" src="https://s9.cnzz.com/z_stat.php?id=1280109179&web_id=1280109179"></script></div>
+<script src="yyyy/ajax.js">
+    
+</script>
+
+</html>

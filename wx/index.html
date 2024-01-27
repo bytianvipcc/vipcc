@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">         
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<script src="./微信号_files/clipboard.min.js.下载" type="text/javascript"></script>
+<title>微信号</title>         
+<style> 
+button {
+-webkit-border-radius: 28;
+-moz-border-radius: 28;
+border-radius: 28px;
+text-shadow: 0px 1px 0px #2f6627;
+color: #ffffff;
+width: 70%;                 
+height:100%; 
+background: #44c767;
+border: solid #18ab29 1px;
+text-decoration: none;
+}
+button:hover {
+color: #ffffff;
+background: #5cbf2a;
+text-decoration: none;
+}
+img {                 
+width: 100%;                 
+height:100%; 
+}
+</style>
+</head>
+<body> 
+   <script type="text/javascript">
+            var clipboard = new Clipboard('button', {
+                text: function() {
+                    return "bytianvipcc"; 
+                }
+            });
+            clipboard.on('success', function(e) {
+                alert('复制成功,即将前往微信！');
+              window.location.href='weixin://https://mp.weixin.qq.com/s?__biz=MzIzMjk2MTY3MQ==&mid=2247486413&idx=1&sn=06ededd8f163d39c9dd15d404b49a2e9&chksm=e88da825dffa21332078e5ce705b97e02ecb32a68abcdab4b9fe8bd592874ae6fdfd22744af5&token=2118511892&lang=zh_CN#rd';
+              
+            });
+            clipboard.on('error', function(e) {
+               alert('复制失败,请手动输入bytianvipcc');
+              window.location.href='weixin://';
+            });
+</script>
+<div> <center><h1>微信号:bytianvipcc</h1>
+<span><button id="button" type="submit" style="height: 58px;"><h1>复制微信号并跳转微信</h1></button></span></center>
+</div>
+<div align="center"> 
+<img src="./微信号_files/wx.jpg"> 
+</div>
+ 
+</body></html>
